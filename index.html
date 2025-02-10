@@ -3,56 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>WEB</title>
 </head>
 <body>
 
+    <img class="many-lines" src="./icons/many_lines.svg" alt="many lines">
+
     <header class="header">
         <img class="header-logo" src="./icons/Jez_Salad_logo.svg" alt="Logo"/>
-        <nav class="header-nav">
-            <a class="header-link" href="#">Home</a>
-            <a class="header-link" href="#">Menu</a>
-            <a class="header-link" href="#">Contact</a>
-            <a class="header-link" href="#">About us</a>
-            <button class="sign-up-btn">Sign</button>
-        </nav>
+        <div class="links font-500">
+            <a class="header-link gray-text link-active" href="#">Home</a>
+            <a class="header-link gray-text" href="#">Menu</a>
+            <a class="header-link gray-text" href="#">Contact</a>
+            <a class="header-link gray-text" href="#">About us</a>
+        </div>
+        <button class="sign-up-btn btn font-600 white-text">Sign</button>
     </header>
 
     <main class="main">
 
         <section class="banner">
 
-            <article class="banner-item">
+            <article class="banner-item banner-left flex-column justify-btw">
 
-                <div class="higlighted-text">
-                    <span class="banner-subheader">#1  Best Healthy Salad</span>
+                <div class="higlighted-text font-600 center-text">
+                    <span class="banner-subheader orange-text">#1  Best Healthy Salad</span>
                 </div>
                 
                 <h1 class="banner-header">
                     <span class="orange-text">Skip</span> The Diet, Just Eat Healthy With Jez Salad
                 </h1>
-                <p class="banner-text">
+
+                <p class="banner-text gray-text">
                     Imagine you don't need a diet because we provide 
                     healthy and delicious food for you!
                 </p>
 
-                <button class="order-food-btn">Order Food</button>
+                <button class="order-food-btn btn font-600 white-text">Order Food</button>
 
                 <div class="ratings-container">
 
                     <div class="rating">
-                        <span class="rating-header">5.000+</span>
-                        <span class="rating-text">Customer</span>
+                        <span class="rating-header font-600">5.000+</span>
+                        <span class="rating-text gray-text font-500">Customer</span>
                     </div>
 
                     <div class="rating">
-                        <span class="rating-header">8.000+</span>
-                        <span class="rating-text">Delivery</span>
+                        <span class="rating-header font-600">8.000+</span>
+                        <span class="rating-text gray-text font-500">Delivery</span>
                     </div>
 
                     <div class="rating">
-                        <span class="rating-header">1.000+</span>
-                        <span class="rating-text">Ratings</span>
+                        <span class="rating-header font-600">1.000+</span>
+                        <span class="rating-text gray-text font-500">Ratings</span>
                     </div>
 
                 </div>
@@ -61,35 +65,63 @@
 
             <article class="banner-item">
 
-                <img src="./imgs/woman_eating_salad.png" alt="woman eating salad" height="700">
+                <img class="woman-photo" src="./imgs/woman_eating_salad.png" alt="woman eating salad" height="700">
+
+                <img class="heart-icon" src="./icons/heart.svg" alt="heart icon">
 
                 <div class="review-bar">
-                    <img src="./icons/smiling_face.svg" alt="smiling face">
-                    <span class="review-bar-header">Our Happy Customer</span>
+                    <img class="smiling-face" src="./icons/smiling_face.svg" alt="smiling face">
 
-                    <div class="review-bar-detailed-info">
-                        <img src="./icons/Star.svg" alt="star">
-                        <span class="review-bar-text">
-                            <b>4.9</b>  (1.989 Reviews)
-                        </span>
+                    <div class="review-bar-info">
+
+                        <span class="review-bar-header font-600">Our Happy Customer</span>
+                        <div class="review-bar-detailed-info">
+                            <img src="./icons/Star.svg" alt="star">
+                            <span class="review-bar-text">
+                                <b>4.9</b>  (1.989 Reviews)
+                            </span>
+                        </div>
+
                     </div>
 
                 </div>
 
                 <div class="callories-graph">
 
-                    <span class="callories-graph-text">Daily Calories</span>
-                    <span class="subheader">123 Cal</span>
+                    <div class="to-center callories-container">
 
-                    <div class="graphs">
-                        <progress class="progress-bar" value="35" max="100"></progress>
-                        <progress class="progress-bar" value="50" max="100"></progress>
-                        <progress class="progress-bar" value="72" max="100"></progress>
-                        <progress class="progress-bar" value="60" max="100"></progress>
-                        <progress class="progress-bar" value="50" max="100"></progress>
-                        <progress class="progress-bar" value="80" max="100"></progress>
-                        <progress class="progress-bar" value="88" max="100"></progress>
-                        <progress class="progress-bar" value="92" max="100"></progress>
+                        <div class="callories-graph-text">
+                            <span class="callories-graph-text font-500">Daily Calories</span>
+                            <span class="callories-subheader">123 Cal</span>
+                        </div>
+    
+                        <div class="graphs">
+                            <div class="progress-bar">
+                                <div class="pb pb1"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb2"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb3"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb4"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb5"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb6"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb7"></div>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="pb pb8"></div>
+                            </div>
+                        </div>
+
                     </div>
                     
                 </div>
@@ -100,49 +132,111 @@
 
         <section class="motivations">
 
-            <h2 class="section-header">
-                WHY CHOOSE US
-                FOR <span class="orange-text">YOUR HEALTHY FOOD</span>
-            </h2>
+            <div class="motivations-frame">
 
-            <p class="motivation-text">
-                We continue to consistently choose and maintain the quality of the fruit served, so that it remains fresh and nutritious when you eat it.
-            </p>
+                <div class="motivations-info">
 
-            <div class="motivations-container">
-
-                <article class="motivation">
-                    <img src="./icons/Icon_factory.svg" alt="Motivation 1" class="motivation-img">
-                    <h4 class="motivation-name">Own fruit orchard</h4>
-                    <p class="motivation-description">
-                        Langsung dari Kebun Sendiri yang 
-                        tersebar di setiap provinsi yang 
-                        memiliki cabang toko Jez Salad.
+                    <h2 class="motivation-header font-600">
+                        WHY CHOOSE US<br>
+                        FOR <span class="orange-text">YOUR HEALTHY FOOD</span>
+                    </h2>
+        
+                    <p class="motivation-text font-500">
+                        We continue to consistently choose and maintain the quality of the fruit served, so that it remains fresh and nutritious when you eat it.
                     </p>
-                    <a href="#" class="motivation-link">Learn more →</a>
-                </article>
+    
+                </div>
+    
+                <div class="motivations-container justify-btw">
+    
+                    <article class="motivation">
 
-                <article class="motivation">
-                    <img src="./icons/Icon_first_place.svg" alt="Motivation 2" class="motivation-img">
-                    <h4 class="motivation-name">#1 Healthy Fruit Salad</h4>
-                    <p class="motivation-description">
-                        The pioneer of healthy fruit salads that 
-                        are delicious & suitable for all people 
-                        with the best quality assurance.
-                    </p>
-                    <a href="#" class="motivation-link">Learn more →</a>
-                </article>
+                        <div class="motivation-container to-center">
 
-                <article class="motivation">
-                    <img src="./icons/Icon_trophy.svg" alt="Motivation 3" class="motivation-img">
-                    <h4 class="motivation-name">100 Top Brand</h4>
-                    <p class="motivation-description">
-                        We are one of the best brands in the 
-                        Food and Beverage sector 
-                        in Indonesia.
-                    </p>
-                    <a href="#" class="motivation-link">Learn more →</a>
-                </article>
+                            <img src="./icons/Icon_factory.svg" alt="Motivation 1" class="motivation-img">
+                            <h4 class="motivation-name font-600">Own fruit orchard</h4>
+                            <p class="motivation-description">
+                                Langsung dari Kebun Sendiri yang 
+                                tersebar di setiap provinsi yang 
+                                memiliki cabang toko Jez Salad.
+                            </p>
+
+                            <a href="#" class="motivation-link motivation-btn">
+                                <div class="motivation-btn-info justify-btw">
+                                    <span class="motivation-btn-text">Learn more</span>
+
+                                    <div class="motivation-btn-arrow" alt="right arrow icon">
+                                        <svg class="motivation-btn-arrow-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.0833 12.7002L5.08328 12.7002" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0335 6.67579L20.0835 12.6998L14.0335 18.7248" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                        </div>
+
+                    </article>
+    
+                    <article class="motivation motivation-active">
+
+                        <div class="motivation-container to-center">
+
+                            <img src="./icons/Icon_first_place.svg" alt="Motivation 2" class="motivation-img">
+                            <h4 class="motivation-name font-600">#1 Healthy Fruit Salad</h4>
+                            <p class="motivation-description">
+                                The pioneer of healthy fruit salads that 
+                                are delicious & suitable for all people 
+                                with the best quality assurance.
+                            </p>
+                            
+                            <a href="#" class="motivation-link motivation-btn motivation-btn-active">
+                                <div class="motivation-btn-info justify-btw">
+                                    <span class="motivation-btn-text">Learn more</span>
+                                    
+                                    <div class="motivation-btn-arrow" alt="right arrow icon">
+                                        <svg class="motivation-btn-arrow-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.0833 12.7002L5.08328 12.7002" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0335 6.67579L20.0835 12.6998L14.0335 18.7248" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        
+                    </article>
+    
+                    <article class="motivation">
+
+                        <div class="motivation-container to-center">
+
+                            <img src="./icons/Icon_trophy.svg" alt="Motivation 3" class="motivation-img">
+                            <h4 class="motivation-name font-600">100 Top Brand</h4>
+                            <p class="motivation-description">
+                                We are one of the best brands in the 
+                                Food and Beverage sector 
+                                in Indonesia.
+                            </p>
+                            
+                            <a href="#" class="motivation-link motivation-btn">
+                                <div class="motivation-btn-info justify-btw">
+                                    <span class="motivation-btn-text">Learn more</span>
+                                    
+                                    <div class="motivation-btn-arrow" alt="right arrow icon">
+                                        <svg class="motivation-btn-arrow-svg" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.0833 12.7002L5.08328 12.7002" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M14.0335 6.67579L20.0835 12.6998L14.0335 18.7248" stroke="#575757" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+
+                        </div>
+                        
+                    </article>
+    
+                </div>
 
             </div>
 
@@ -150,56 +244,89 @@
 
         <section class="about-us">
 
-            <h2 class="about-us-header">
-                What Are People 
-                Saying <span class="orange-text">About Us</span>
-            </h2>
+            <div class="about-us-container">
 
-            <p class="about-us-text">
-                We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.
-            </p>
+                <div class="about-us-left justify-btw">
 
-            <p class="about-us-text">
-                <span class="about-us-header">02</span>/05
-            </p>
-
-            <button class="about-us-btn gray-orange">←</button>
-            <button class="about-us-btn orange">→</button>
-
-            <div class="reviews-container">
-
-                <article class="review">
-
-                    <img class="review-img" src="./imgs/review_first_photo.jpg" alt="review person photo 1">
-                    <h4 class="review-name">Selena Gomz</h4>
-                    <h6 class="review-age">22 Years</p>
-                    <p class="review-text">
-                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                    <h2 class="about-us-header font-600">
+                        What Are People 
+                        Saying <span class="orange-text">About Us</span>
+                    </h2>
+        
+                    <p class="about-us-text">
+                        We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.
                     </p>
-
-                </article>
-
-                <article class="review">
-
-                    <img class="review-img" src="./imgs/review_second_photo.jpg" alt="review person photo 2">
-                    <h4 class="review-name">David Ken</h4>
-                    <h6 class="review-age">24 Years</p>
-                    <p class="review-text">
-                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+        
+                    <p class="about-us-text">
+                        <span class="about-us-header">02</span>/05
                     </p>
+        
+                    <div class="about-us-buttons justify-btw">
 
-                </article>
+                        <button class="about-us-btn gray-orange">
+                            <svg class="to-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M20 11H7.83L13.42 5.41L12 4L4 12L12 20L13.41 18.59L7.83 13H20V11Z" fill="white"/>
+                            </svg>
+                        </button>
 
-                <article class="review">
+                        <button class="about-us-btn orange">
+                            <svg class="to-center" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 4L10.59 5.41L16.17 11H4V13H16.17L10.59 18.59L12 20L20 12L12 4Z" fill="white"/>
+                            </svg>
+                        </button>
 
-                    <img class="review-img" src="./imgs/review_third_photo.jpg" alt="review person photo 3">
-                    <h4 class="review-name">Jennifer Sina</h4>
-                    <h6 class="review-age">21 Years</p>
-                    <p class="review-text">
-                        The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
-                    </p>
+                    </div>
+    
+                </div>
+    
+                <div class="reviews-container">
+    
+                    <article class="review">
+    
+                        <div class="review-container">
 
-                </article>
+                            <img class="review-img" src="./imgs/review_first_photo.jpg" alt="review person photo 1">
+                            <h4 class="review-name">Selena Gomz</h4>
+                            <h6 class="review-age font-500">22 Years</h6>
+                            <p class="review-text">
+                                The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+
+                        </div>
+    
+                    </article>
+    
+                    <article class="review">
+    
+                        <div class="review-container">
+
+                            <img class="review-img" src="./imgs/review_second_photo.jpg" alt="review person photo 1">
+                            <h4 class="review-name">David Ken</h4>
+                            <h6 class="review-age font-500">24 Years</h6>
+                            <p class="review-text">
+                                The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+
+                        </div>
+    
+                    </article>
+
+                    <article class="review">
+    
+                        <div class="review-container">
+
+                            <img class="review-img" src="./imgs/review_third_photo.jpg" alt="review person photo 1">
+                            <h4 class="review-name">Jennifer Sina</h4>
+                            <h6 class="review-age font-500">21 Years</h6>
+                            <p class="review-text">
+                                The salad is fresh!!! Don't ask about the sauce again, it's really delicious, it's going to be routine. I recommend this salad to all of you guys! because they really take care of the quality.
+                            </p>
+
+                        </div>
+    
+                    </article>
+    
+                </div>
 
             </div>
 
@@ -207,31 +334,42 @@
 
         <section class="discounts">
 
-            <h3 class="section-subheader orange-text">MENU YANG MEMBUATMU JATUH CINTA</h3>
-            <h2 class="section-header">
-                ENJOY THE BEST MENU AND GET 
-                <span class="orange-text">DISCOUNTS</span> AVAILABLE
-            </h2>
+            <div class="discounts-frame justify-btw">
 
-            <div class="discounts-container">
+                <div class="discounts-text">
 
-                <article class="discount">
-                    <img class="salad-image" src="./imgs/salad_1.jpg" alt="salad 1" height="400">
-                    <span class="salad-name">Mini Salad Yummy</span>
-                    <span class="salad-price">$ 2.99</span>
-                </article>
+                    <h3 class="discounts-subheader font-500 orange-text">MENU YANG MEMBUATMU JATUH CINTA</h3>
+                    <h2 class="discounts-header font-600">
+                        ENJOY THE BEST MENU AND GET 
+                        <span class="orange-text">DISCOUNTS</span> AVAILABLE
+                    </h2>
 
-                <article class="discount">
-                    <img class="salad-image" src="./imgs/salad_2.jpg" alt="salad 2" height="400">
-                    <span class="salad-name">Completed Salad</span>
-                    <span class="salad-price">$ 3.99</span>
-                </article>
+                </div>
 
-                <article class="discount">
-                    <img class="salad-image" src="./imgs/salad_3.jpg" alt="salad 3" height="400">
-                    <span class="salad-name">Salad Yummy Red</span>
-                    <span class="salad-price">$ 3.99</span>
-                </article>
+                <div class="discounts-container justify-btw">
+
+                    <article class="discount salad-image-1" alt="salad 1">
+                        <div class="">
+                            <span class="salad-name">Mini Salad Yummy</span>
+                            <span class="salad-price">$ 2.99</span>
+                        </div>
+                    </article>
+
+                    <article class="discount salad-image-2" alt="salad 2">
+                        <div class="">
+                            <span class="salad-name">Completed Salad</span>
+                            <span class="salad-price">$ 3.99</span>
+                        </div>
+                    </article>
+
+                    <article class="discount salad-image-2" alt="salad 2">
+                        <div class="">
+                            <span class="salad-name">Salad Yummy Red</span>
+                            <span class="salad-price">$ 3.99</span>
+                        </div>
+                    </article>
+
+                </div>
 
             </div>
 
