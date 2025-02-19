@@ -19,6 +19,10 @@ body {
     font-family: "Poppins", serif;
 } */
 
+.font-700 {
+    font-weight: 700;
+}
+
 .font-600 {
     font-weight: 600;
 }
@@ -31,8 +35,10 @@ body {
 font_size:
 14px - 1.51vh
 16px - 1.72vh
+18px - 1.94vh
 20px - 2.15vh
 24px - 2.59vh
+40px - 4.31vh
 48px - 5.17vh
 */
 
@@ -50,7 +56,7 @@ font_size:
 .header {
     margin: auto auto;
     padding: 3.2vh 0 0 0 ;
-    width: 80vw;
+    width: 81.25%;
     display: flex;
     justify-content: space-between;
 }
@@ -117,20 +123,35 @@ font_size:
 }
 
 .banner {
-    display: flex;
-    justify-content: space-between;
-    margin: auto;
+
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* margin: auto; */
+}
+
+.banner-container {
+    width: 88%;
+    margin: 0;
+    margin-left: 9.375%;
 }
 
 .banner-item {
-    width: 45.7vw;
+    /* width: 50.43%; */
     height: 80.8vh;
     position: relative;
 }
 
-.banner-left {
-    left: 9.375vw;
+.banner-item-left {
+    width: 46.68%;
 }
+
+.banner-item-right {
+    width: 52.1%;
+}
+
+/* .banner-left {
+    left: 9.375vw;
+} */
 
 .higlighted-text {
     display: flex;
@@ -148,8 +169,8 @@ font_size:
 
     font-weight: 700;
     line-height: 10.1vh;
-    font-size: 7.7vh;
-    width: 34vw;
+    font-size: calc(3vw + 3vh);
+    /* width: 34vw; */
 }
 
 .banner-subheader {
@@ -197,8 +218,8 @@ font_size:
 
 .heart-icon {
     position: absolute;
-    top: 10vh;
-    right: 10vw;
+    top: 3.14%;
+    right: 3.83%;
 }
 
 .review-bar {
@@ -208,17 +229,17 @@ font_size:
 
     position: absolute;
 
-    top: 62.5vh;
+    bottom: 12.9%;
 
-    width: 31vh;
+    width: 43.77%;
     height: 7.5vh;
 
     background-color: white;
 
     border-color: transparent;
-    border-radius: 3.7vh;
+    border-radius: 3.75vh;
 
-    box-shadow: rgba(99, 99, 99, 0.2) 0 0.21vh 0.53vw 0;
+    box-shadow: rgba(99, 99, 99, 0.2) 0 2px 7.5px 0;
 }
 
 .review-bar-header {
@@ -227,22 +248,29 @@ font_size:
 }
 
 .review-bar-info {
-    margin-left: 4vw;
+    /* margin-right: 0; */
+    position: absolute;
+    right: 32px;
+    width: 60%;
 }
 
 .review-bar-text {
     font-size: 1.3vh;
     font-weight: 400;
+
+    margin-left: 8px;
 }
 
 .review-bar-detailed-info {
-    width: 7vw;
+    /* width: 7vw; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .smiling-face {
     height: 6.46vh;
+
+    /* margin-left: 0.3vh; */
 
     position: absolute;
     top: 50%;
@@ -254,11 +282,11 @@ font_size:
 
     position: absolute;
 
-    top: 60vh;
-    left: 22.8vw;
+    bottom: 0;
+    right: 8.42%;
 
-    width: 10vw;
-    height: 22vh;
+    width: 25.53%;
+    height: 25.83%;
     background-color: white;
 
     /* border-color: transparent; */
@@ -501,6 +529,7 @@ font_size:
     width: 8.46vw;
     margin: 0 auto;
     display: flex;
+    align-items: center;
 }
 
 .motivation-btn-text {
@@ -524,7 +553,7 @@ font_size:
     background-color: #575757; */
     
     margin: auto 0;
-    height: 2.59vh;
+    /* height: 50%; */
 }
 
 /* .motivation-btn-arrow-svg {
@@ -532,15 +561,18 @@ font_size:
 } */
 
 .about-us {
+    /* width: 100%; */
     height: 72.7vh;
     background: linear-gradient(180deg, #FFF6EA 0%, rgba(255, 232, 199, 0.5) 100%);
     display: flex;
     flex-direction: column;
+
+    overflow: hidden;
 }
 
 .about-us-container {
-    margin: auto;
-    /* width: 81.25%; !!!*/
+    margin: auto 0 auto 9.375%;
+    /* width: 81.25%; */
     align-self: center;
     /* height: 47.63vh; */
     display: flex;
@@ -624,6 +656,7 @@ font_size:
     display: flex;
     width: 62.15vw;
 
+    /* margin-right: -500px; */
     /* padding-left: 10vw; */
 
     /* position: relative;
@@ -688,25 +721,246 @@ font_size:
     height: 80%;
 }
 
-
-
 .discounts-subheader {
     margin: 0;
     font-size: 2.15vh;
 }
 
 .discounts-header {
-    /* width: 50.83vw; */
-    margin: 0;
+    /* text-align: center; */
+
+    width: 63.75%;
+    font-size: 5.17vh;
+    margin: 12px auto 0;
 }
 
 .discounts-container {
     display: flex;
+    height: 70%;
+}
+
+.discount {
+    position: relative;
+
+    width: 31%;
+    max-width: 500px;
+    border-radius: 50px;
+
+    background-size: cover;
+    background-position: center;
+
+    text-align: left;
+    color: white;
+}
+
+.salad-image-1 {
+    background-image: url('./imgs/salad_1.jpg');
+}
+
+.salad-image-2 {
+    background-image: url('./imgs/salad_2.jpg');
+}
+
+.salad-image-3 {
+    background-image: url('./imgs/salad_3.jpg');
+}
+
+.salad-text {
+    top: 76%;
+    left: 10.8%;
+    position: absolute;
+}
+
+.salad-name {
+    font-size: 2.59vh;
+}
+
+.salad-price {
+    font-size: 4.31vh;
+}
+
+.subscribe {
+    height: 81vh;
+    
+    position: relative;
+}
+
+.subscribe-container {
+    width: 81.25%;
+    height: 73.4%;
+
+    max-width: 1500px;
+
+    background-color: #FFF1DE;
+    border-radius: 50px;
+
+    position: relative;
+
+    overflow-y: hidden;
+}
+
+.subscribe-img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -40%);
+
+    /* height: 120%; */
+    width: 100%;
+    max-width: 1134px;
+}
+
+.subscribe-text-and-form {
+    width: 60%;
+    height: 73.55%;
+
+    /* margin: 0; */
+}
+
+.subscribe-subheader {
+    margin: 0;
+    font-size: 2.15vh;
+}
+
+.subscribe-header {
+    margin: 0;
+    font-size: 5.17vh;
+    line-height: 7.24vh;
+}
+
+.subscribe-details {
+    width: 70.55%;
+
+    margin: 24px auto 0;
+    font-size: 1.72vh;
+}
+
+.subscribe-form {
+    position: relative;
+    height: 20%;
+}
+
+.subscribe-form-button:hover {
+    color: #FB9333;
+}
+
+.subscribe-form-button:hover {
+    color: #FB9333;
+}
+
+.subscribe-form input {
+    /* box-sizing: border-box; */
+
+    padding: 0 5%;
+    /* padding-left: 100px; */
+
+    border: 0;
+    border-radius: 100px;
+
+    font-size: 1.94vh;
+
+    width: 90%;
+    height: 100%;
+
+    /* background-color: white; */
+}
+
+/* .subscribe-form input.text {
+    padding-left: 100px;
+} */
+
+.subscribe-form button {
+
+    cursor: pointer;
+    
+    width: 25%;
+    height: 80%;
+
+    border: 1vh transparent;
+    border-radius: 100px;
+    /* border: 0; */
+
+    color: white;
+
+    position: absolute;
+    right: 0.862vh;
+    bottom: 10%;
+}
+
+.subscribe-form button:hover {
+    border-color: #FB9333;
+}
+
+footer {
+    height: 34.27vh;
+    position: relative;
+    /* display: flex; */
+}
+
+.footer-container {
+    /* justify-self: center; */
+    width: 81.25%;
+    height: 68%;
+    /* margin: auto auto; */
+}
+
+.company-details {
+    width: 18.12%;
+}
+
+.footer-logo {
+    width: 128px;
+}
+
+.footer-text {
+    margin: 0;
+    font-size: 1.72vh;
+}
+
+.footer-logo-and-text {
+    height: 58%;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #575757;
+    font-size: 1.72vh;
+}
+
+.features {
+    width: 6.07%;
+}
+
+.footer-infos {
+    width: 20.26%;
+}
+
+.footer-info {
+    display: flex;
+    align-items: start;
+}
+
+.footer-info .footer-text {
+    margin-left: 16px;
+}
+
+.social-media {
+    width: 16.41%;
+    height: 31.45%;
+}
+
+.social-media-links {
+    width: 138px;
 }
 
 .flex-column {
     display: flex;
     flex-direction: column;
+}
+
+.flex {
+    display: flex;
 }
 
 .justify-btw {
